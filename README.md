@@ -1,1 +1,1 @@
-# tmyzer
+# telethon message analyzer
