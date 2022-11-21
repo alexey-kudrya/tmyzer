@@ -7,3 +7,8 @@ variable "key_name" {
   description = "The name of your ssh-key."
   type        = string
 }
+
+variable "instance_type" {
+  description = "Instance type to use for the instance"
+  default = "t2.micro"
+}

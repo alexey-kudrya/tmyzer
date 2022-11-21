@@ -16,7 +16,7 @@ resource "aws_dynamodb_table" "users-dynamodb-table" {
 
 resource "aws_instance" "tmyzer" {
   ami             = data.aws_ami.amazon-linux-2.id
-  instance_type   = "t2.micro"
+  instance_type   = var.instance_type
   security_groups = [aws_security_group.tmyzer.name]
   key_name        = var.key_name
 
